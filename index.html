@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sathwik Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./tailwind.config.js"></script>
+</head>
+<body class="overflow-x-hidden">
+    <div class="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%]">
+        <img src="./images/header-bg-color.png" alt="bg-color" class="w-full">
+    </div>
+    <nav class="w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50">
+        <img src="./images/LOGO.png" alt="LOGO"
+        class="w-28 cursor-pointer mr-14">
+        <ul class="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50 ">
+            <li><a href="#top">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+        </ul>
+        <div class="flex items-center gap-4">
+        
+        <a href="#contact" class="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4">contact<img src="./images/arrow-icon.png"alt="arrow" class="w-3"></a>
+        <button class="block md:hidden ml-3" onclick="openMenu()"> <img src="images/menu-black.png" alt="" class="w-6">
+        </button>
+        </div>
+    <!--mobile menu-->
+    <ul id="sidemenu" class="flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-rose-50 transition duration-500">
+       <div class="absolute right-6 top-6" onclick="closeMenu()">
+        <img src="./images/close-black.png"alt="" class="w-5 cursor-pointer">
+       </div>
+        <li><a href="#top"onclick="closeMenu()" >Home</a></li>
+        <li><a href="#about"onclick="closeMenu()">About Me</a></li>
+        <li><a href="#services"onclick="closeMenu()">Services</a></li>
+        <li><a href="#work"onclick="closeMenu()">Work</a></li>
+        <li><a href="#contact"onclick="closeMenu()">Contact Me</a></li>
+    </ul> 
+    </nav>
+
+    <!--header section-->
+    <div class="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4">
+        <img src="./images/profilepic.jpg" alt="" class="rounded-full w-32">
+        <h3 class="flex items-end gap-2 text-xl md:text-2xl mb-3">Hi! I'm Sathwik Reddy</h3>
+        <h1 class="text-3xl sm:text-6xl lg:text-[66px]">Java Full Stack Developer </h1>
+        <p class="max-w-2xl mx-auto">I'm a Java Full Stack Developer from USA with a experience of 10 Years </p>
+        <div class="flex flex-col sm:flex-row items-center gap-4 mt-4">
+            <a href="contact" class="px-10 py-3 border rounded-full bg-gradient-to-r from-[#b820e6] to-[#da7d20]  text-white flex items-center gap-2 " >Contact Me<img src="./images/right-arrow-white.png" alt="" class="w-4"></a>
+
+            <a href="" download
+             class="px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2 bg-white" >My resume<img src="./images/download-icon.png" alt="" class="w-4"></a>
+        </div>
+    </div>
+
+       <!--about me-->
+    <div id="about" class="w-full px-[1%] py-10 scroll-mt-20">
+        <h4 class="text-center mb-2 text-lg ">Introduction</h4>
+        <h2 class="text-center text-5xl">About Me</h2>
+    
+        <div class="flex w-full flex-col lg:flex:row items-center gap-20 my-20">
+        <div class="flex-1 ">
+            <p class="mb-10 max-w-2xl text-center"> I am a experienced Java  Full Stack Developer over ()years of professional expertise in the field. Throughout my career, I have had the privilage of collaborating with prestigious organizations,contributing to their success and growth.
+            </p> 
+            <div class="max-w-max mx-auto relative left-0">
+                <img src="./images/lang.jpg" class="w-64 sm:w-80 rounded-3xl max-w-none">
+    
+            </div>
+            <br>
+            <br>                
+            <ul class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl">
+                <li class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]">
+                    <img src="./images/lang icon.png" alt="" class="w-7 mt-3">
+                    <h3 class="my-4 font-semibold text-gray-700">Languages</h3>
+                    <p class="text-gray-600 text-sm">
+                        HTML, CSS, JavaScript, React JS, PHP
+                    </p>
+                </li>
+                <li class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]">
+                    <img src="./images/lang icon.png" alt="" class="w-7 mt-3">
+                    <h3 class="my-4 font-semibold text-gray-700">Education</h3>
+                    <p class="text-gray-600 text-sm">
+                       edit edu Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur eum ipsam molestiae maxime atque similique sunt magnam possimus, sequi consequatur, facilis non ullam facere voluptatum. Necessitatibus praesentium alias sapiente eligendi!
+                    </p>
+                </li>
+                <li class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]">
+                    <img src="./images/lang icon.png" alt="" class="w-7 mt-3">
+                    <h3 class="my-4 font-semibold text-gray-700">Projects</h3>
+                    <p class="text-gray-600 text-sm">
+                        edit project
+                    </p>
+                </li>
+            </ul>
+            <h4 class="my-6 text-gray-700">Tools i use</h4>
+            <ul class="flex items-center gap-3 sm:gap-5">
+                <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
+                    <img src="./images/vscode_icon.png" alt="" class="w-5 sm:w-7">
+                </li>
+               
+                <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
+                    <img src="images/github icon.png" alt="" class="w-5 sm:w-7">
+                </li>
+                
+                <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
+                    <img src="./images/git_icon.png" alt="" class="w-5 sm:w-7">
+                </li>
+                <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
+                    <img src="./images/bootstrap_icon.png" alt="" class="w-5 sm:w-7">
+                </li>
+                <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
+                    <img src="./images/Angular_icon.png" alt="" class="w-5 sm:w-7">
+                </li>
+                <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
+                    <img src="./images/jquery_icon.png" alt="" class="w-5 sm:w-7">
+                </li>
+                <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
+                    <img src="./images/mongodb_icon.png" alt="" class="w-5 sm:w-7">
+                </li>
+
+            </ul>
+
+        </div>
+     </div>
+    </div>
+
+    <!--services-->
+    <div id="services" class="bg-center w-full px-[12%] py-10 scroll-mt-20  flex flex-col lg:flex:row items-center gap-20 my-20 ">
+        <h4 class="text-center mb-2 text-lg ">What i Offer</h4>
+        <h2 class="text-center text-5xl">My Services</h2>
+        <p class="text-center max-w-2xl mx-auto mt-5 mb-12">add work experience with years   Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti natus odio ipsa aliquam quibusdam. Mollitia dolore laudant</p>
+
+        <div class=" grid grid-cols-auto sm:grid-cols-3 gap-6 max-w-2xl  ">
+            <div class="border border-gray-400 text-center rounded-lg px-8 py-12 hover:shadow-[4px_4px_0_#000] cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500">
+                <img src="./images/web-icon.png" class="w-10" alt="">
+                <h3 class="text-lg my-4 text-gray-700">Web Development</h3>
+                <p class="text-sm text-gray-600 leading-5">Web Development is an essential process that involves coding and programming to bring websites and applications to life, making them functional and user-friendly...</p>  
+            
+            </div>
+            <div class="border border-gray-400 text-center rounded-lg px-8 py-12 hover:shadow-[4px_4px_0_#000] cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500">
+                <img src="./images/web-icon.png" class="w-10" alt="">
+                <h3 class="text-lg my-4 text-gray-700">Mobile App</h3>
+                <p class="text-sm text-gray-600 leading-5">Mobile App is a specialized software application designed for handheld, wireless devices like smartphones and tablets...</p>
+            </div>
+            <div class="border border-gray-400 text-center rounded-lg px-8 py-12 hover:shadow-[4px_4px_0_#000] cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500">
+                <img src="./images/web-icon.png" class="w-10" alt="">
+                <h3 class="text-lg my-4 text-gray-700">Graphics Design</h3>
+                <p class="text-sm text-gray-600 leading-5">Graphic design is a powerful craft that transforms ideas into compelling visual content. By expertly blending typography, imagery, color, and layout effectively convey messages and evoke strong emotions...</p>
+            </div>
+        </div>
+     <br>
+     <!--contact-->
+     <div id="contact" class="w-full px-[12%] py-10 scroll-mt-20 bg-[url('./images/footer-bg-color.png')] bg-no-repeat bg-[length:90%_auto] bg-center">
+        <h4 class="text-center mb-2 text-lg ">Connect with me</h4>
+        <h2 class="text-center text-5xl">Get in touch</h2>
+        <p class="text-center max-w-2xl mx-auto mt-5 mb-12">Interested in discussing career opportunities? Feel free to contact me, please use the form below.</p>
+    <form  method="post" "https://api.web3forms.com/submit" class="max-w-2xl mx-auto ">
+        <input type="hidden" name="access_key" value="<input type="hidden" name="access_key" value="9e019781-88d0-4d84-8372-39618d7896f6">
+        <div class="grid grid-cols-auto gap-6 mt-10 mb-8">
+            <input type="text" placeholder="Enter your name" class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white " required name="name">
+
+            <input type="email" placeholder="Enter your email " class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white "required name="email">
+
+        </div>
+    </div>
+    <textarea rows="6" placeholder="Enter your message" class="w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6"  required name="message"></textarea>
+
+    <button class="py-3 px-8 w-max flex items-center justify-between gap-2 bg-black/80 text-white rounded-full mx-auto hover:bg-black duration-500">Submit now <img src="./images/right-arrow-white.png">
+    </button>
+    </form> 
+        <!--footer-->
+        <div class="mt-20">
+            <div class="text-center">
+                <img src="./images/LOGO.png" class="w-36 mx-auto mb-2">
+                <div class="w-max flex items-center gap-2 mx-auto ">
+                    <img src="./images/mail_icon.png" class="w-6">
+                    sathwikmandadi2000@gmail.com
+                </div>
+                <div class="text-center sm:flex items-center justify-between border-t border-gray ">
+                    <p>&copy 2024 Sathwik Mandadi. All rights reserved.</p>
+                </div>
+                    <div>
+                        <ul class="flex items-center gap-10 justify-center mt-4 sm:mt-0">
+                           <li><a href="https://linkedin.com">Linkedin</a></li>
+                       </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+   <script src="./Script.js"></script>
+</body>
+</html>
